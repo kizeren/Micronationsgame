@@ -58,7 +58,7 @@ class PhoogleMap{
 * apiKey
 * Google API Key
 */
-    var $apiKey = "";
+    var $apiKey = "AIzaSyDnMKE_J-HJqdIcJTsZ9RQ-Do1-d70o5j8";
 
 /**
 * showControl
@@ -126,7 +126,7 @@ function centerMap($lat,$long){
 		die("All Addresses must be passed as a string");
 	  }
 		$apiURL = 
-"http://maps.google.com/maps/geo?&output=xml&key=ABQIAAAAJUqzkGTwxHyfr_AFlet6FRSqiy-aFjcz-2DijvkBG8XEujeXPxSyYk3YLvgZJq0HyHrB2gCTJJRVAg&q=";
+"https://maps.google.com/maps/geo?&output=xml&key=AIzaSyDnMKE_J-HJqdIcJTsZ9RQ-Do1-d70o5j8";
 		$addressData = file_get_contents($apiURL.urlencode($address));
 		
 		$results = $this->xml2array($addressData);

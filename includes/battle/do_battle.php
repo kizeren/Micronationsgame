@@ -1,6 +1,6 @@
 <?php
 
-include('/home/nations/public_html/beta/config.php');
+include('/home/mcbride/public_html/micronationsgame/config.php');
 
 require_once("$directory/includes/config/auth.php");
 include("$directory/includes/misc/include.php");
@@ -91,7 +91,7 @@ while ($attacker_military_row = mysql_fetch_array($attacker_military_sql)) {
         $errmsg_arr[] = 'You do not have that many f16s.';
         $errflag = true;
     }
-    if ($mercs > $attacker_military_row['ac130']) {
+    if ($ac130 > $attacker_military_row['ac130']) {
         $errmsg_arr[] = 'You do not have that many AC130s.';
         $errflag = true;
     }

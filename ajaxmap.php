@@ -45,7 +45,7 @@ while($mapcoords = mysql_fetch_array($mapcoords_sql))
 
 <center>
     <script 
-src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAggef3bNpDpQqbJQ9St-2uxTmLgyQXfmorlurUajGnuLXyU3nRxT2dbJ--uzaI-q9dxbXkn22l8fO7Q" 
+src="https://maps.google.com/maps/api/js?key=api&v=2&key=AIzaSyCK8LWPZXdV6k1jLZep-ihRUXYUWL6bLp0" 
        type="text/javascript"></script>
     <script type="text/javascript">
     //<![CDATA[
@@ -79,7 +79,7 @@ src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAggef3bNpDpQqbJQ9St-2ux
         
 
         // Change this depending on the name of your PHP file
-        GDownloadUrl("<? echo "phpsqlajax_genxml.php"; ?>", function(data) {
+        GDownloadUrl("<?php echo "phpsqlajax_genxml.php"; ?>", function(data) {
           var xml = GXml.parse(data);
           var markers = xml.documentElement.getElementsByTagName("marker");
           for (var i = 0; i < markers.length; i++) {
@@ -92,7 +92,7 @@ src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAggef3bNpDpQqbJQ9St-2ux
             map.addOverlay(marker);
           }
         });
-                GDownloadUrl("<? echo "rogmap.php"; ?>", function(data) {
+                GDownloadUrl("<?php echo "rogmap.php"; ?>", function(data) {
           var xml = GXml.parse(data);
           var markers = xml.documentElement.getElementsByTagName("marker");
           for (var i = 0; i < markers.length; i++) {

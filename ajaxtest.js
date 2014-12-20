@@ -2,7 +2,7 @@
 
 var seconds = 10;
 var divid = "timediv";
-var url = "tick.php";
+var url = "includes/misc/tick.php";
 
 ////////////////////////////////
 //
