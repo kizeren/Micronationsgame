@@ -13,9 +13,9 @@ function one_second() {
   color_flag = !color_flag;
 }
 </script>
-<script src="../../ajaxtest.js"></script>
+<script src="http://flt.mcbridepcrepair.com/~mcbride/micronationsgame/ajaxtest.js"></script>
 <?php
-include("$directory/config.php");
+include("/home/mcbride/public_html/micronationsgame/config.php");
 $id = $_SESSION['SESS_MEMBER_ID'];
 $langid = $_SESSION['SESS_LANG'];
 

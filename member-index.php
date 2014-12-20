@@ -155,7 +155,7 @@ while ($row = mysql_fetch_array($result1)) {
     echo "<tr><td>$l4:</td><td> $row[7]</td></tr>";
     echo "<tr><td>$l5:</td><td> $row[8]</td></tr>";
     echo "<tr><td>$l6:</td><td> $row[9]</td></tr>";
-    echo "<tr><td>$l7:</td><td> <img width=\"40px\" height=\"20px\" src=\"$row[10]\"></td></tr>";
+    echo "<tr><td>$l7:</td><td> <img width=\"40px\" height=\"40px\" src=\"$row[10]\"></td></tr>";
     echo "<tr><td>$l8:</td><td>$row[26]</td></tr>";
     echo "</table></td><td valign=\"top\">"; //End First Table.
     echo "<table class=\"member2\">"; // Second Table.

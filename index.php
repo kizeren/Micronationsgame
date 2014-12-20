@@ -76,7 +76,7 @@ $result = mysql_query("SELECT * FROM members ORDER BY member_id DESC LIMIT 0,10"
 
 while ($row = mysql_fetch_array($result)) {
 
-    echo "<img width=\"40px\" height=\"20px\" src=\"$row[10]\">&nbsp&nbsp&nbsp<a href=\"./public_profile.php?id=$row[0]\">$row[5]</a><br>";
+    echo "<img width=\"40px\" height=\"40px\" src=\"$row[10]\">&nbsp&nbsp&nbsp<a href=\"./public_profile.php?id=$row[0]\">$row[5]</a><br>";
 }
 echo"<br><br><br>";
 echo $langrow['login2'];
@@ -85,7 +85,7 @@ $top_money_sql = mysql_query("SELECT * FROM members ORDER BY money DESC LIMIT 0,
 while ($top_money_row = mysql_fetch_array($top_money_sql)) {
     $top_money = number_format($top_money_row[14]);
 
-    echo "<img width=\"40px\" height=\"20px\" src=\"$top_money_row[10]\">&nbsp&nbsp&nbsp<a href=\"./public_profile.php?id=$top_money_row[0]\">$top_money_row[5]</a> $$top_money $top_money_row[7]<br>";
+    echo "<img width=\"40px\" height=\"40px\" src=\"$top_money_row[10]\">&nbsp&nbsp&nbsp<a href=\"./public_profile.php?id=$top_money_row[0]\">$top_money_row[5]</a> $$top_money $top_money_row[7]<br>";
 }
        }
 ?>

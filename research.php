@@ -60,7 +60,7 @@ include("$directory/includes/misc/resource.php");
 echo "<table id=\"table-3\">";
 ?>
 
-<?
+<?php
 $research = mysql_query("SELECT * FROM resources WHERE member_id = '$id'", $db);
 
 $research2 = mysql_query("SELECT * FROM resource_cost WHERE id = 1", $db);

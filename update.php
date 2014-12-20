@@ -522,7 +522,7 @@ $now = new DateTime;
 $clone = $now;        //this doesnot clone so:
 $clone->modify('+5 Minutes');
 
-$date = $now->format('d/m/Y g:i:00 A');
+$date = $now->format('m/d/Y g:i:00 A');
 mysql_query("UPDATE date SET date = '$date'", $db);
 
 //end tick stuff

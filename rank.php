@@ -152,7 +152,7 @@
                       $kills = mysql_query("SELECT * FROM pkill WHERE member_id = '$row[1]'", $db);
                       while($killsrow = mysql_fetch_array($kills))
                       {
-                    echo "<tr><td><img width=\"40px\" height=\"20px\" src=\"$pointrow[10]\"></td><td><a href=\"public_profile.php?id=$row[1]\">$pointrow[3]</a></td><td> " . number_format($row[2]) . "</td><td>won: $killsrow[1] </td><td>lost: $killsrow[2]</td></tr>";
+                    echo "<tr><td><img width=\"40px\" height=\"40px\" src=\"$pointrow[10]\"></td><td><a href=\"public_profile.php?id=$row[1]\">$pointrow[3]</a></td><td> " . number_format($row[2]) . "</td><td>won: $killsrow[1] </td><td>lost: $killsrow[2]</td></tr>";
                   }
                    }
 		}
