@@ -1,5 +1,5 @@
 <?php
-include("/home/nations/public_html/beta/includes/config/config.php");
+include("/home/mcbride/public_html/micronationsgame/config.php");
 include("$directory/includes/config/auth.php");
 $datesql = mysql_query("SELECT * FROM date", $db);
 while ($daterow = mysql_fetch_array($datesql)) {

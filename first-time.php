@@ -15,7 +15,7 @@ include("config.php");
     </head>
     <body><div id="banner">
             <h1>Welcome <?php echo $_SESSION['SESS_LOGIN']; ?> to <?php echo $game_name; ?>!</h1>
-            <?php include("$directory/includes/misc/lock.php"); ?>
+            <?php include("$directory/includes/misc/clock.php"); ?>
         </div>
 
         <?php

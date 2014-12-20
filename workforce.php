@@ -69,7 +69,7 @@ while ($row = mysql_fetch_array($result)) {
 <form id="Purchase" name="purchase" method="get" action="./includes/work/work-farm.php">
 
     <table><tr>
-            <td><? echo $l9; ?>: </td>
+            <td><?php echo $l9; ?>: </td>
             <td><input name="farm" type="text" class="textfield" id="farm" /></td></tr>
 
         <?php
@@ -84,7 +84,7 @@ while ($row = mysql_fetch_array($result)) {
             echo "<tr><td colspan=\"4\">$l6: $farm</td></tr>";
         }
         ?>
-        <tr><td><input type="submit" name="Submit" value="<? echo $l7; ?>" class="myButton"/></td></tr>
+        <tr><td><input type="submit" name="Submit" value="<?php echo $l7; ?>" class="myButton"/></td></tr>
 
 </form>
 
@@ -109,7 +109,7 @@ while ($rowindustrial = mysql_fetch_array($resultindustrial)) {
     }
 }
 ?>
-    <tr><td><input type="submit" name="Submit" value="<? echo $l7; ?>" class="myButton"/></td>
+    <tr><td><input type="submit" name="Submit" value="<?php echo $l7; ?>" class="myButton"/></td>
         </form>
     </tr>
 </table><br><br><table>
@@ -131,7 +131,7 @@ while ($rowcommercial = mysql_fetch_array($resultcommercial)) {
     }
 }
 ?>
-        <tr><td><input type="submit" name="Submit" value="<? echo $l7; ?>" class="myButton"/></td>
+        <tr><td><input type="submit" name="Submit" value="<?php echo $l7; ?>" class="myButton"/></td>
         </tr></table>
 </form>
         <?php

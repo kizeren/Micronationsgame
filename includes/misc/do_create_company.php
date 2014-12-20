@@ -1,5 +1,5 @@
 <?php
-include("../../config.php");
+include('/home/mcbride/public_html/micronationsgame/config.php');
 
 require_once("$directory/includes/config/auth.php");
 include("$directory/includes/misc/include.php");

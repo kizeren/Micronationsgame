@@ -4,7 +4,7 @@ $time = microtime();
 $time = explode(' ', $time);
 $time = $time[1] + $time[0];
 $start = $time;
-include("/home/nations/public_html/beta/includes/config/config.php");
+include("config.php");
 
 if (isset($_SERVER['REQUEST_URI'])) {
     die("Access denied");

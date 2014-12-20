@@ -1,5 +1,5 @@
 <?php
-include('/home/nations/public_html/beta/config.php');
+include('/home/mcbride/public_html/micronationsgame/config.php');
 
 include("$directory/includes/config/auth.php");
 include("$directory/includes/misc/include.php");
@@ -8,7 +8,7 @@ $lon = rand(1, 100);
 
 $id = mysql_real_escape_string($_SESSION['SESS_MEMBER_ID']);
 $name = mysql_real_escape_string($_SESSION['SESS_LOGIN']);
-mysql_query("UPDATE members SET land = 0, first_login = '0', money = 200000 WHERE member_id = '$id'", $db);
+mysql_query("UPDATE members SET land = 200, first_login = '0', money = 200000 WHERE member_id = '$id'", $db);
 mysql_query("INSERT INTO nationlog (nationid, message, date) VALUES ( '$id', 'You have founded a nation!!!', Now())", $logdb);
 mysql_query("INSERT INTO resources (member_id, food, culture, goods, farmlvl, culturelvl, industrylvl, storagelvl) VALUES ('$id', '0', '0', '0', '0', '0', '0,', '0')", $db);
 mysql_query("INSERT INTO structures (member_id, gold_mine, oil_well) VALUES ('$id', '0', '0')", $db);

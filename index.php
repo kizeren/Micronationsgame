@@ -9,11 +9,12 @@
         <?php
         include("config.php");
         include("$directory/includes/misc/include.php");
+        session_start();
+
         if($_SESSION['SESS_LANG'] == '')
         {
             $_SESSION['SESS_LANG'] = "en";
         }
-        session_start();
         $lang = $_SESSION['SESS_LANG'];
         echo "<h1>$game_name <img src=\"http://mcbride.homelinux.net/~nations/flags/beta_icon.gif\"></h1>";
         ?>

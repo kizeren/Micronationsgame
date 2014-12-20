@@ -12,7 +12,7 @@
 <?php
 
 echo "<h1>Registration</h1>";
-include("./includes/config/config.php");
+include("config.php");
 $langid = $_SESSION['SESS_LANG'];
 
 	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -77,6 +77,6 @@ while ($langrow = mysql_fetch_array($language_sql)) {
 
 echo "$lang";
 }
-include("online.php"); ?>
+include("$directory/includes/misc/online.php"); ?>
 </body>
 </html>

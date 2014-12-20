@@ -1,4 +1,5 @@
-<?phpinclude("/home/nations/public_html/beta/config.php");
+<?php
+include('/home/mcbride/public_html/micronationsgame/config.php');
 
 include("$directory/includes/config/auth.php");
 include("$directory/includes/misc/include.php");

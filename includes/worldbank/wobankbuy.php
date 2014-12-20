@@ -1,5 +1,5 @@
 
-<?php        include('/home/nations/public_html/beta/config.php');
+<?php        include('../../config.php');
 
         require_once("$directory/includes/config/auth.php");
 include("$directory/includes/misc/include.php");

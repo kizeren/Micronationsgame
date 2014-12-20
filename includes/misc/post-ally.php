@@ -1,7 +1,8 @@
 
 <?php
         require_once('auth.php');
-        include('config.php');
+include('/home/mcbride/public_html/micronationsgame/config.php');
+
         include('functions.php');
 include("include.php");
         $id = mysql_real_escape_string($_SESSION['SESS_LOGIN']);

@@ -44,16 +44,17 @@ while ($row = mysql_fetch_array($result)) {
     }
 }
 ?>
-<script type="text/javascript" src="./overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+<script type="text/javascript" src="./overlib/overlib.js"><!-- overLIB (c) Erik Bosrup 
+--></script>
 
 <div id="res_bar" style="left: 400px; top: 60px;">
     <table><tr>
-            <td><img src="" height="17px" width="17px" onmouseover="return overlib('<? echo $rl5; ?>.', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><? echo "$$money"; ?></td>
-            <td><img src="../icons/Food.png" height="17px" width="17px" onmouseover="return overlib('<? echo $rl1; ?>.<br> <?echo $rl4; ?>: <? echo "$food_tick"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><? echo "$food"; ?></td>
-            <td><img src="../icons/vinyl-record-icon.jpg" height="17px" width="17px" onmouseover="return overlib('<? echo $rl2; ?>.<br> <?echo $rl4; ?>: <? echo "$culture_tick"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><? echo "$culture"; ?></td>
-            <td><img src="../icons/e84ba8be.png" height="17px" width="17px" onmouseover="return overlib('<? echo $rl3; ?>.<br> <?echo $rl4; ?>: <? echo "$goods_tick"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><? echo "$goods"; ?></td>
-            <td><img src="../icons/Gold-Bar-icon.png" height="17px" width="17px" onmouseover="return overlib('<? echo $rl7; ?>.<br> <?echo $rl4; ?>: <? echo "$goldsum"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><? echo "$goldprod"; ?></td>
-            <td>Lead: <? echo $lead; ?></td>
+            <td><img src="" height="17px" width="17px" onmouseover="return overlib('<?php echo $rl5; ?>.', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><?php echo "$$money"; ?></td>
+            <td><img src="../icons/Food.png" height="17px" width="17px" onmouseover="return overlib('<?php echo $rl1; ?>.<br> <?php echo $rl4; ?>: <?php echo "$food_tick"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><?php echo "$food"; ?></td>
+            <td><img src="../icons/vinyl-record-icon.jpg" height="17px" width="17px" onmouseover="return overlib('<?php echo $rl2; ?>.<br> <?php echo $rl4; ?>: <?php echo "$culture_tick"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><?php echo "$culture"; ?></td>
+            <td><img src="../icons/e84ba8be.png" height="17px" width="17px" onmouseover="return overlib('<?php echo $rl3; ?>.<br> <?php echo $rl4; ?>: <?php echo "$goods_tick"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><?php echo "$goods"; ?></td>
+            <td><img src="../icons/Gold-Bar-icon.png" height="17px" width="17px" onmouseover="return overlib('<?php echo $rl7; ?>.<br> <?php echo $rl4; ?>: <?php echo "$goldsum"; ?>', FGCOLOR, '#999999', BGCOLOR, '#333333', TEXTSIZE, 3);" onmouseout="return nd();"></td><td><?php echo "$goldprod"; ?></td>
+            <td>Lead: <?php echo $lead; ?></td>
         </tr></table></div>
 
 <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>

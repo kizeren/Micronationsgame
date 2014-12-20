@@ -1,6 +1,6 @@
 
 <?php
-include("/home/nations/public_html/beta/config.php");
+include('/home/mcbride/public_html/micronationsgame/config.php');
 
 include("$directory/includes/config/auth.php");
 include("$directory/includes/misc/include.php");
@@ -54,7 +54,7 @@ include("$directory/includes/misc/include.php");
 
       $goldtlog = number_format($goldt);
       $goldlog = number_format($gold);
-      $result3 = mysql_query("INSERT INTO nationlog (nationid, message, date) VALUES ( '$id', 'You bought a gold mine for $1,000,000', Now())", $logdb);
+      $result3 = mysql_query("INSERT INTO nationlog (nationid, message, date) VALUES ( '$id', 'You bought a gold mine for $1,000,000', CURRENT_TIMESTAMP)", $logdb);
 
       $errmsg_arr[] = 'You bought a gold mine for $1,000,000.';
       $_SESSION['ERRMSG_ARR'] = $errmsg_arr;

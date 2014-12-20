@@ -1,6 +1,6 @@
 <?php
 
-
+$ismaint = 'false';
 
         if ($ismaint == "true") {
             header("location: maintenance.html");
