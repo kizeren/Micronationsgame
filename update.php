@@ -253,7 +253,7 @@ World: $world <br>
 
 // Greater then 4036 ticks and not logged in get deleted.
 // changed for beta world.
-echo "deletion update";
+echo "/ndeletion update/n";
 $deletion = mysql_query("SELECT * FROM members WHERE ttd > 40000", $db);
 while ($deletion_row = mysql_fetch_array($deletion)) {
     $bank_sql = mysql_query("SELECT * FROM worldbank", $db);
@@ -449,7 +449,7 @@ while ($train = mysql_fetch_array($training_sql)) {
     if ($transports <= 0) {
         mysql_query("DELETE FROM traintrans WHERE transports <= 0", $db);
     }
-    if ($transports < $trainlevel || $mines == $trainlevel) {
+    if ($transports < $trainlevel || $transports == $trainlevel) {
         $message = "You finished training transports.";
         mysql_query("UPDATE military SET transports = transports + '$transports' WHERE member_id = '$troopid'", $db);
         // mysql_query("INSERT INTO nationlog (nationid, message, date) VALUES ( '$troopid', '$message', Now())", $logdb);

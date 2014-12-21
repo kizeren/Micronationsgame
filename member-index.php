@@ -110,6 +110,7 @@ while ($military_row = mysql_fetch_array($military_sql)) {
     $mines = number_format($military_row['mines']);
     $f16 = number_format($military_row['f16']);
     $ac130 = number_format($military_row['ac130']);
+    $trans = number_format($military_row['transports']);
 }
 $language_sql = mysql_query("SELECT * FROM member_index WHERE lang = '$langid'", $langdb);
 while ($langrow = mysql_fetch_array($language_sql)) {
@@ -177,6 +178,7 @@ while ($row = mysql_fetch_array($result1)) {
     echo "<tr><td>Infantry</td><td>$troops</td></tr>";
     echo "<tr><td>Spies:</td><td>$spies</td></tr>";
     echo "<tr><td>Tanks:</td><td>$tanks</td></tr>";
+    echo "<tr><td>Transports:</td><td>$trans</td></tr>";
     echo "<tr><td>Mercs:</td><td>$mercs</td></tr>";
     echo "<tr><td>Mines:</td><td>$mines</td></tr>";
     echo "<tr><td>F16s:</td><td>$f16</td></tr>";
